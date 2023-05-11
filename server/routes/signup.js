@@ -1,9 +1,7 @@
 const express = require("express");
+const { signupController } = require("../controllers/authController");
 const router = express.Router();
-const { SUCCESS } = require("../statusCodes");
 
-router.post("/", (req, res) => {
-  res.status(SUCCESS).json({ message: "This is the POST singup route" });
-});
+router.post("/", signupController);
 
 module.exports = router;
