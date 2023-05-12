@@ -4,6 +4,11 @@
       "name": "Jhon",
       "email": "jhon@gmail.com",
       "password": "$2a$10$B5ADcS12Fk.JDQKII7HPr.arxG1iYrwqjSyzaecd0T21n80S5cnU."
+    },
+    {
+      "name": "Jane",
+      "email": "jane@gmail.com",
+      "password": "$2a$10$5fBrsRw5JGpRaiBrZruWee/8zEydHlvHrDMnZj1E0E3mOkugZyQIW"
     }
   ]
 }
