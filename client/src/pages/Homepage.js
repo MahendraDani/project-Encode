@@ -3,9 +3,11 @@ import NavMenu from "../components/navbar/NavMenu";
 
 const Homepage = () => {
   return (
-    <div>
-      <NavMenu />
-    </div>
+    <>
+      <div>
+        <NavMenu />
+      </div>
+    </>
   );
 };
 

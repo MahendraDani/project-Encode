@@ -16,7 +16,7 @@ const NavMenu = () => {
   return (
     <>
       {/* Sticky container */}
-      <div className="w-full h-16 bg-gradient-to-r from-gray-800 to-gray-600 sticky top-0 px-4">
+      <div className="w-full h-16 bg-gradient-to-r from-gray-800 to-gray-600 fixed top-0 px-4">
         {/* Width container -flex */}
         <div className="md:w-[75%] mx-auto h-16 flex items-center justify-between">
           <div>
