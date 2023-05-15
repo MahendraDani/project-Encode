@@ -13,6 +13,11 @@
     {
       "email": "jhonny@gmail.com",
       "password": "$2a$10$0TonLg0ZAdcycJGR0vSwjeqqIaHRpdiD391q.dOb0R3T4fIsTgHui"
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "$2a$10$Dt5R2lpQHAelzrMZziFfEep7LCZpEEsjaj1OaDBKwpCdMX0M0SBnm"
     }
   ]
 }
