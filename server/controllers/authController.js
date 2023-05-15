@@ -13,9 +13,9 @@ const {
 
 const signupController = asyncHandler(async (req, res) => {
   try {
-    const { name, email, password } = req.body;
+    const { email, password } = req.body;
 
-    if (!name || !email || !password) {
+    if (!email || !password) {
       return await res
         .status(BAD_REQUEST)
         .json({ message: "All fields are mandatory" });
@@ -26,7 +26,6 @@ const signupController = asyncHandler(async (req, res) => {
     const hashedPassword = await brycpt.hash(password, saltRounds);
 
     const newUser = {
-      name: name,
       email: email,
       password: hashedPassword,
     };

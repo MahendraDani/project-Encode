@@ -9,6 +9,10 @@
       "name": "Jane",
       "email": "jane@gmail.com",
       "password": "$2a$10$5fBrsRw5JGpRaiBrZruWee/8zEydHlvHrDMnZj1E0E3mOkugZyQIW"
+    },
+    {
+      "email": "jhonny@gmail.com",
+      "password": "$2a$10$0TonLg0ZAdcycJGR0vSwjeqqIaHRpdiD391q.dOb0R3T4fIsTgHui"
     }
   ]
 }

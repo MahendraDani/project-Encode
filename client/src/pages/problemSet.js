@@ -1,7 +1,8 @@
 import React from "react";
+// import NavMenu from "../components/navbar/NavMenu";
 
 const ProblemSet = () => {
-  return <div>ProblemSet</div>;
+  return <div>Problem set</div>;
 };
 
 export default ProblemSet;
