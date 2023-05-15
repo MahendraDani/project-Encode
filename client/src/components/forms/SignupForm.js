@@ -30,16 +30,16 @@ const SignupForm = () => {
         <div className="w-full h-screen]">
           <div className="w-full h-screen flex justify-center items-center gap-4">
             {/* Form container */}
-            <div className="w-auto bg-slate-700 rounded-2xl p-4">
+            <div className="w-[60%] h-auto md:w-[25%] bg-slate-700 rounded-2xl p-4">
               <div className="text-center">
-                <h2 className="font-mono text-4xl pb-10 px-4 font-extrabold text-sky-500">
+                <h2 className="font-mono text-4xl pb-5 px-4 font-extrabold text-sky-500">
                   SIGN UP
                 </h2>
               </div>
               {/* Each label and its input */}
 
               <form onSubmit={handleSignup}>
-                <div className="flex justify-between items-center gap-4 font-mono pb-5 text-sky-500">
+                <div className="flex flex-col justify-between items-left gap-2 font-mono pb-5 text-sky-500">
                   <label for="name" className="text-xl">
                     Name
                   </label>
@@ -53,7 +53,7 @@ const SignupForm = () => {
                     }}
                   />
                 </div>
-                <div className="flex justify-between items-center gap-4 font-mono pb-5 text-sky-500">
+                <div className="flex flex-col justify-between items-left gap-2 font-mono pb-5 text-sky-500">
                   <label for="name" className="text-xl">
                     Email
                   </label>
@@ -68,7 +68,7 @@ const SignupForm = () => {
                   />
                 </div>
 
-                <div className="flex justify-between items-center gap-4 font-mono pb-10 text-sky-500">
+                <div className="flex flex-col justify-between items-left gap-2 font-mono pb-10 text-sky-500">
                   <label for="name" className="text-xl">
                     Password
                   </label>
