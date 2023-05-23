@@ -27,7 +27,7 @@ const SignupForm = () => {
     <>
       <NavMenu />
       <div className="w-full h-screen bg-gradient-to-b from-[#023e8a] to-[#0096c7] ">
-        <div className="w-full h-screen]">
+        <div className="w-full h-screen">
           <div className="w-full h-screen flex justify-center items-center gap-4">
             {/* Form container */}
             <div className="w-[60%] h-auto md:w-[25%] bg-slate-700 rounded-2xl p-4">

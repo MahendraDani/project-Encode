@@ -3,6 +3,8 @@ const brycpt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const path = require("path");
+const dotenv = require("dotenv").config();
+const localStorage = require("localStorage");
 
 const {
   SUCCESS,
@@ -88,7 +90,14 @@ const loginController = asyncHandler(async (req, res) => {
         res.status(UNAUTHORIZED).json({ message: "Invalid email or password" });
       } else {
         //Add logic to generate and  send access token
-        res.status(SUCCESS).json({ message: "User logged in successfully" });
+        const token = jwt.sign(
+          { id: userExists.id },
+          process.env.JWT_SECRET_KEY
+        );
+        localStorage.setItem("accessToken", token);
+        res
+          .status(SUCCESS)
+          .json({ message: "User logged in successfully", accessToken: token });
       }
     });
   } catch (err) {
