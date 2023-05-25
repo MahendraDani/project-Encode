@@ -8,6 +8,7 @@ const { UNAUTHORIZED } = require("../statusCodes");
 const verifyAccessToken = asyncHandler(async (req, res, next) => {
   try {
     const token = localStorage.getItem("accessToken");
+    console.log(token);
     if (!token) {
       res.status(UNAUTHORIZED).json({ message: "Access token required" });
     }

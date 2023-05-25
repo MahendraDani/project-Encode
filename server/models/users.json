@@ -11,13 +11,9 @@
       "password": "$2a$10$5fBrsRw5JGpRaiBrZruWee/8zEydHlvHrDMnZj1E0E3mOkugZyQIW"
     },
     {
-      "email": "jhonny@gmail.com",
-      "password": "$2a$10$0TonLg0ZAdcycJGR0vSwjeqqIaHRpdiD391q.dOb0R3T4fIsTgHui"
-    },
-    {
-      "name": "abc",
-      "email": "abc@gmail.com",
-      "password": "$2a$10$Dt5R2lpQHAelzrMZziFfEep7LCZpEEsjaj1OaDBKwpCdMX0M0SBnm"
+      "name": "dummy",
+      "email": "dummy@gmail.com",
+      "password": "$2a$10$UiJt0Y0egBl8M/Q4logEHuLJPUasF.HScOpLb3WeNkGR39XhmQheG"
     }
   ]
 }

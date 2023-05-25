@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import NavMenu from "../components/navbar/NavMenu";
 
 const ProblemSet = () => {
+  // const [problems, setProblems] = useState([]);
+  // const getProblems = async () => {
+  //   try {
+  //     const response = await fetch("http://localhost:5000/problems", {
+  //       method: "GET",
+  //     });
+  //     const json = response.json();
+  //     setProblems(json.problems);
+  //     return <p>{json}</p>;
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
   const PROBLEMS = [
     {
       id: 0,

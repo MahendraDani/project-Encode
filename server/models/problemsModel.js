@@ -1,6 +1,6 @@
 let PROBLEMS = [
   {
-    id: 1,
+    id: 0,
     title: "Two sum",
     problemStatement:
       "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
@@ -10,7 +10,7 @@ let PROBLEMS = [
     difficulty: "Easy",
   },
   {
-    id: 2,
+    id: 1,
     title: "Add two numbers",
     problemStatement:
       "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.",
@@ -20,7 +20,7 @@ let PROBLEMS = [
     difficulty: "Medium",
   },
   {
-    id: 3,
+    id: 2,
     title: "Longest Substring Without Repeating Characters",
     problemStatement:
       "Given a sting s find the length of the longest substring without repeating characters.",
@@ -30,7 +30,7 @@ let PROBLEMS = [
     difficulty: "Medium",
   },
   {
-    id: 4,
+    id: 3,
     title: "Longest Palindromic Substring",
     problemStatement:
       "Given a sting s return the longest palindromic substring in s.",
@@ -40,7 +40,7 @@ let PROBLEMS = [
     difficulty: "Medium",
   },
   {
-    id: 5,
+    id: 4,
     title: "Median of two sorted arrays",
     problemStatement:
       "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.",

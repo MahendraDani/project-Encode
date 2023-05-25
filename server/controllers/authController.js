@@ -12,6 +12,7 @@ const {
   CREATED,
   UNAUTHORIZED,
 } = require("../statusCodes");
+const { json } = require("express");
 
 const signupController = asyncHandler(async (req, res) => {
   try {
@@ -92,12 +93,15 @@ const loginController = asyncHandler(async (req, res) => {
         //Add logic to generate and  send access token
         const token = jwt.sign(
           { id: userExists.id },
-          process.env.JWT_SECRET_KEY
+          process.env.JWT_SECRET_KEY,
+          {
+            expiresIn: "1h",
+          }
         );
         localStorage.setItem("accessToken", token);
         res
           .status(SUCCESS)
-          .json({ message: "User logged in successfully", accessToken: token });
+          .json({ message: "User logged in successfully", token: token });
       }
     });
   } catch (err) {

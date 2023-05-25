@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 app.use("/signup", require("./routes/signup"));
 app.use("/login", require("./routes/login"));
 app.use("/problems", verifyAccessToken, require("./routes/problemSet"));
-app.use("/problems", require("./routes/problem"));
+app.use("/problems", verifyAccessToken, require("./routes/problem"));
 
 app.listen(port, () => {
   console.log(`Server running at port: ${port}`);
