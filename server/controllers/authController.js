@@ -4,8 +4,7 @@ const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const path = require("path");
 const dotenv = require("dotenv").config();
-// const localStorage = require("localStorage");
-// localStorage is not a module, you cannot import it
+const localStorage = require("localStorage");
 
 const {
   SUCCESS,
@@ -99,15 +98,10 @@ const loginController = asyncHandler(async (req, res) => {
             expiresIn: "1h",
           }
         );
-
-        // if (token) {
-        //   localStorage.setItem("accessToken", `${token}`);
-        // }
-
-        res.status(SUCCESS).json({
-          message: "User logged in successfully",
-          token: token,
-        });
+        localStorage.setItem("accessToken", token);
+        res
+          .status(SUCCESS)
+          .json({ message: "User logged in successfully", token: token });
       }
     });
   } catch (err) {

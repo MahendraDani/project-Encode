@@ -18,8 +18,6 @@ const LoginForm = () => {
       }),
     });
     const json = await response.json();
-    //always handle localStorage on the client side, read why we do not use localStorage in the server side
-    localStorage.setItem("accessToken", json.token);
     console.log(json);
   };
   return (

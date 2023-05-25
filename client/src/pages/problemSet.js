@@ -1,32 +1,44 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import NavMenu from "../components/navbar/NavMenu";
 
 const ProblemSet = () => {
-  const [problems, setProblems] = useState([]);
+  // const [problems, setProblems] = useState([]);
+  // const getProblems = async () => {
+  //   try {
+  //     const response = await fetch("http://localhost:5000/problems", {
+  //       method: "GET",
+  //     });
+  //     const json = response.json();
+  //     setProblems(json.problems);
+  //     return <p>{json}</p>;
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
+  const PROBLEMS = [
+    {
+      id: 0,
+      title: "Two sum",
+      problemStatement:
+        "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+      input: "nums = [3,2,4], target = 6",
+      output: "[1,2]",
+      acceptance: "49.9%",
+      difficulty: "Easy",
+    },
+    {
+      id: 1,
+      title: "Add two numbers",
+      problemStatement:
+        "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.",
+      input: "l1 = [2,4,3], l2 = [5,6,4]",
+      output: "[7,0,8]",
+      acceptance: "40.50%",
+      difficulty: "Medium",
+    },
+  ];
 
-  //pass token as a header
-  const getProblems = async () => {
-    try {
-      const response = await fetch("http://localhost:5000/problems", {
-        method: "GET",
-        headers: {
-          "x-access-token": localStorage.getItem("accessToken"),
-        },
-      });
-      const json = await response.json();
-      setProblems(json.PROBLEMS);
-      return <p>{json}</p>;
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  //useEffect to call the function getProblems everytime window is reloaded
-  useEffect(() => {
-    getProblems();
-  }, []);
-
-  const problemTitle = problems?.map((problem) => {
+  const problemTitle = PROBLEMS.map((problem) => {
     return (
       <div className="font-mono border-2 border-black p-2 my-2 flex justify-between gap-4 items-center">
         <p className=""> {problem.title}</p>
